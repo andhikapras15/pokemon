@@ -8,7 +8,7 @@ const Card = ({ pokemon, loading, infoPokemon, infoPokemon2 }) => {
           console.log("ini itemnya", item);
           return (
             <div
-              className="md:w-44 w-full h-28 md:h-32 bg-teal-400 flex md:pl-4 md:pt-2 rounded-xl pl-2 pt-1 "
+              className="md:w-44 w-full h-28 md:h-32 bg-teal-400 flex md:pl-4 md:pt-2 rounded-xl pl-2 pt-1 cursor-pointer"
               key={item.id}
               onClick={() => infoPokemon(item)}
             >

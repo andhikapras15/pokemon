@@ -38,25 +38,25 @@ const PokeInfo = ({ data }) => {
               <div>
                 <div className="md:px-4 md:pt-8 pt-6 flex justify-between md:mb-10">
                   <span
-                    className="font-bold text-[10px] md:text-base"
+                    className="font-bold text-[10px] md:text-base cursor-pointer"
                     onClick={() => setTab(0)}
                   >
                     About
                   </span>
                   <span
-                    className=" text-[10px] md:text-base"
+                    className=" text-[10px] md:text-base cursor-pointer"
                     onClick={() => setTab(1)}
                   >
                     Best stats
                   </span>
                   <span
-                    className=" text-[10px] md:text-base"
+                    className=" text-[10px] md:text-base cursor-pointer"
                     onClick={() => setTab(2)}
                   >
                     Evolution
                   </span>
                   <span
-                    className=" text-[10px] md:text-base"
+                    className=" text-[10px] md:text-base cursor-pointer"
                     onClick={() => setTab(3)}
                   >
                     Moves
@@ -108,22 +108,22 @@ const PokeInfo = ({ data }) => {
               <div>
                 <div className="md:px-4 md:pt-8 pt-7 space-y-0 flex justify-between md:mb-10">
                   <span
-                    className="text-[10px] md:text-base"
+                    className="text-[10px] md:text-base cursor-pointer"
                     onClick={() => setTab(0)}
                   >
                     About
                   </span>
-                  <span className="text-[10px] md:text-base font-bold">
+                  <span className="text-[10px] md:text-base font-bold cursor-pointer">
                     Best stats
                   </span>
                   <span
-                    className="text-[10px] md:text-base"
+                    className="text-[10px] md:text-base cursor-pointer"
                     onClick={() => setTab(2)}
                   >
                     Evolution
                   </span>
                   <span
-                    className="text-[10px] md:text-base"
+                    className="text-[10px] md:text-base cursor-pointer"
                     onClick={() => setTab(3)}
                   >
                     Moves
@@ -185,22 +185,22 @@ const PokeInfo = ({ data }) => {
               <div>
                 <div className="md:px-4 md:pt-8 pt-6 flex justify-between md:mb-10">
                   <span
-                    className="text-[10px] md:text-base"
+                    className="text-[10px] md:text-base cursor-pointer"
                     onClick={() => setTab(0)}
                   >
                     About
                   </span>
                   <span
-                    className="text-[10px] md:text-base"
+                    className="text-[10px] md:text-base cursor-pointer"
                     onClick={() => setTab(1)}
                   >
                     Best stats
                   </span>
-                  <span className="font-bold text-[10px] md:text-base">
+                  <span className="font-bold text-[10px] md:text-base cursor-pointer">
                     Evolution
                   </span>
                   <span
-                    className="text-[10px] md:text-base"
+                    className="text-[10px] md:text-base cursor-pointer"
                     onClick={() => setTab(3)}
                   >
                     Moves
