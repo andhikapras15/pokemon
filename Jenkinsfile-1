@@ -1,11 +1,15 @@
-node {
-  stage('SCM') {
-    git 'https://github.com/andhikapras15/pokemon.git'
+pipeline {
+  agent any
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '5'))
   }
-  stage('SonarQube analysis') {
-    def scannerHome = tool 'SonarQube Scanner 4.8.0.2856';
-    withSonarQubeEnv('sq1') { // If you have configured more than one global server connection, you can specify its name
-      bat "${scannerHome}/bin/sonar-scanner"
+  stages {
+    stage('Scan') {
+      steps {
+        withSonarQubeEnv(installationName: 'sq1') { 
+          bat './mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar'
+        }
+      }
     }
   }
 }
