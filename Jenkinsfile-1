@@ -7,9 +7,7 @@ pipeline {
     stage('Scan') {
       steps {
         withSonarQubeEnv(installationName: 'sq1') { 
-          bat 'mvn clean install sonar:sonar 
-          -Dsonar.sources=src 
-          -Dsonar.javascript.node.maxspace=4096'
+          bat 'mvn clean install sonar:sonar -Dsonar.sources=src -Dsonar.javascript.node.maxspace=4096'          
         }
       }
     }
