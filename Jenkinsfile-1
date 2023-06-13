@@ -7,7 +7,7 @@ pipeline {
     stage('Scan') {
       steps {
         withSonarQubeEnv(installationName: 'sq1') { 
-          bat 'mvn clean install sonar:sonar -Dsonar.java.binaries=**/*.java'
+          bat 'mvn clean install sonar:sonar -Dsonar.java.binaries=target/classes'
         }
       }
     }
