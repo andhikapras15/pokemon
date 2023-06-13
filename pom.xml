@@ -14,8 +14,7 @@
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
-		<source>src/components</source>
+		<java.version>11</java.version>		
 	</properties>
 	<dependencies>
 		<dependency>
